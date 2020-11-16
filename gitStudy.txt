@@ -1,0 +1,7 @@
+{  //如何合并代码
+---拉取master 分支到tmp分支
+git fetch origin master:tmp
+
+---合并分支tmp中代码，命令：git merge tmp
+}
+
