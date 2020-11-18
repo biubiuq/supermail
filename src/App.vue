@@ -10,15 +10,15 @@
   <mt-tabbar v-model="selected">
   <mt-tab-item id="外卖">
     <img slot="icon" src="~assets/img/tabbar/home.svg">
-    外卖
+    首页
   </mt-tab-item>
   <mt-tab-item id="订单">
     <img slot="icon" src="~assets/img/tabbar/home.svg">
-    订单
+    会员
   </mt-tab-item>
   <mt-tab-item id="发现">
     <img slot="icon" src="~assets/img/tabbar/home.svg">
-    发现
+    购物车
   </mt-tab-item>
   <mt-tab-item id="我的">
     <img slot="icon" src="~assets/img/tabbar/home.svg">
