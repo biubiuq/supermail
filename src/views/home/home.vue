@@ -15,6 +15,17 @@
     </Swiper>
       <button @click="btnclick">点击我</button>
       <img data-v-76f3fb8e="1" src="~assets/img/tabbar/home_active.svg">
+      <!-- <mt-tab-container v-model="active">
+        <mt-tab-container-item id="tab-container1">
+        <mt-cell v-for="n in 10" title="tab-container 1" :key="n"></mt-cell>
+        </mt-tab-container-item>
+        <mt-tab-container-item id="tab-container2">
+        <mt-cell v-for="n in 5" title="tab-container 2" :key="n"></mt-cell>
+        </mt-tab-container-item>
+        <mt-tab-container-item id="tab-container3">
+        <mt-cell v-for="n in 7" title="tab-container 3" :key="n"></mt-cell>
+  </mt-tab-container-item>
+</mt-tab-container> -->
 </div>
 </template>
 
@@ -34,7 +45,8 @@ export default {
     return{
       arr:[{
       image:'https://s10.mogucdn.com/mlcdn/c45406/180926_45fkj8ifdj4l824l42dgf9hd0h495_750x390.jpg'
-      },{  image:'https://s10.mogucdn.com/mlcdn/c45406/180926_31eb9h75jc217k7iej24i2dd0jba3_750x390.jpg'}]
+      },{  image:'https://s10.mogucdn.com/mlcdn/c45406/180926_31eb9h75jc217k7iej24i2dd0jba3_750x390.jpg'}],
+       active: 'tab-container1'
     }
   },
   created(){
@@ -45,6 +57,7 @@ export default {
     {
       homejs.ShowDialog();
     }
+    
   }
 }
 </script>

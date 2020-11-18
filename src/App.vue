@@ -14,6 +14,11 @@ export default {
   name: 'App',
   components: {
    maintabbar
+  },
+  data(){
+    return{
+      active:''
+    }
   }
 }
 </script>
