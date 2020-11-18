@@ -1,23 +1,45 @@
 <template>
   <div id="app">
  
-  <maintabbar></maintabbar>
-   <router-view>
-  </router-view>
+  <mt-header title="信息管理系统">
+  <router-link to="/" slot="left">
+    <mt-button icon="back">返回</mt-button>
+  </router-link>
+  <mt-button icon="more" slot="right"></mt-button>
+</mt-header>
+  <mt-tabbar v-model="selected">
+  <mt-tab-item id="外卖">
+    <img slot="icon" src="~assets/img/tabbar/home.svg">
+    外卖
+  </mt-tab-item>
+  <mt-tab-item id="订单">
+    <img slot="icon" src="~assets/img/tabbar/home.svg">
+    订单
+  </mt-tab-item>
+  <mt-tab-item id="发现">
+    <img slot="icon" src="~assets/img/tabbar/home.svg">
+    发现
+  </mt-tab-item>
+  <mt-tab-item id="我的">
+    <img slot="icon" src="~assets/img/tabbar/home.svg">
+    我的
+  </mt-tab-item>
+</mt-tabbar>
   </div>
 </template>
 
 <script>
- import maintabbar from 'components/content/mainTabbar/MainTabBar'
+ 
 
 export default {
   name: 'App',
   components: {
-   maintabbar
+  
   },
   data(){
     return{
-      active:''
+      active:'',
+      selected:''
     }
   }
 }
