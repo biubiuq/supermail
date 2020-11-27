@@ -5,5 +5,9 @@ git fetch origin master:tmp
 ---合并分支tmp中代码，命令：git merge tmp
 }
 
-只需要在输入 git push -u origin dev(远程分支名)， 因为本身我就在本地的dev分支上面，所以可以直接 push，不在dev 分支的话需要 git checkout dev切换到dev分支，个人建议最好是本地分支新建的时候与远程分支命名一致。
+只需要在输入 git push -u origin dev(远程分支名)， 
+因为本身我就在本地的dev分支上面，所以可以直接 push，
+不在dev 分支的话需要 git checkout dev切换到dev分支，个人建议最好是本地分支新建的时候与远程分支命名一致。
 这样就可以成功push
+-------------切换远程分支并下载
+git checkout -b 本地分支名 origin/远程分支名

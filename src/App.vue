@@ -41,7 +41,11 @@ export default {
       active:'',
       selected:''
     }
+  },
+  watch(){
+ 
   }
+ 
 }
 </script>
 
